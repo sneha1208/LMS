@@ -1,0 +1,587 @@
+body button,
+input {
+  outline: none !important;
+}
+/* navbar start */
+
+/* navbar end */
+.overlay {
+  width: 100%;
+  object-fit: contain;
+  /* background-image: url("../../public/Images/Overlay\ Shapes.png"); */
+  /* background-color: rgb(87, 187, 113, 0.15); */
+}
+.overlayImg {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+}
+.mainContent {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+}
+.nav-homeBtn-img {
+  width: 15vw;
+}
+/* main Left start */
+.mainLeft {
+  text-align: center;
+}
+.mainLeft img {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  object-fit: contain !important;
+}
+.mainLeft p {
+  width: 534px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.mainLeftContent {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* main Left end */
+.middleLine {
+  border-right: 1px solid grey;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+}
+/* mainRight start */
+.mainRight {
+  text-align: center;
+}
+.loginCard {
+  width: 65%;
+  margin: 0 auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 3% !important;
+  background-color: #f9f9f9 !important;
+  border: none !important;
+  box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.022),
+    0 2.5px 5.3px rgba(0, 0, 0, 0.032), 0 4.8px 9.9px rgba(0, 0, 0, 0.04),
+    0 8.5px 17.6px rgba(0, 0, 0, 0.048), 0 15.9px 33px rgba(0, 0, 0, 0.058),
+    0 38px 79px rgba(0, 0, 0, 0.08);
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+.card .title {
+  border-bottom: 0.2vh solid rgb(175, 175, 175);
+}
+.card .title h1 {
+  font-size: 40px;
+  color: #57bb71;
+  font-weight: 600;
+  padding: 1%;
+}
+.inputs {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: left;
+}
+.inputs p {
+  margin: 0;
+  margin-left: 0.5vw;
+  margin-bottom: 2px;
+  margin-top: 5%;
+  font-size: 18px;
+}
+.inputs input {
+  height: 42px;
+  width: 100%;
+  padding: 13px;
+  border-radius: 5vh;
+  font-size: 16px;
+  border: 0.1vw solid rgb(105, 105, 105);
+}
+.checkbox {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6%;
+  margin-bottom: 2.5%;
+}
+.checkbox p {
+  margin: 0;
+  font-size: 16px;
+}
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.rememberBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rememberBox p {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+
+.login {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+}
+.loginBtn {
+  width: 100%;
+  background-color: rgb(87, 187, 113);
+  border: 2px solid rgb(87, 187, 113);
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  border-radius: 1.2vh;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s;
+}
+.loginBtn:hover {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5%;
+}
+.hero .hr {
+  width: 30%;
+  border-top: 0.1vh solid rgb(161, 161, 161);
+  position: relative;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.faceG img {
+  width: 12%;
+}
+.faceG img:last-of-type {
+  margin-left: 2%;
+}
+
+.faceG p {
+  font-size: 18px;
+}
+.blue {
+  color: #3fa7d6;
+  font-weight: 500;
+}
+.orLogin {
+  margin-bottom: 5%;
+}
+/* mainRight end */
+
+@media screen and (max-width: 1500px) {
+  .mainLeft p {
+    width: 70%;
+    font-size: 22px;
+  }
+  .mainLeft img {
+    width: 60%;
+  }
+  .loginCard {
+    width: 65%;
+  }
+  .card .title h1 {
+    font-size: 40px;
+  }
+  .CreatedAccount-half-inputs input .inputs input {
+    padding: 2.1%;
+  }
+  .inputs p {
+    font-size: 18px;
+    margin-top: 2%;
+  }
+  .inputs input {
+    font-size: 16px;
+  }
+
+  .checkbox {
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  .checkbox p {
+    font-size: 18px;
+  }
+  .login {
+    margin-bottom: 10px;
+  }
+  .mainLeft img {
+    width: 65%;
+  }
+  .mainLeft p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .loginCard {
+    width: 70%;
+  }
+  .mainLeft img {
+    width: 65%;
+  }
+  .navbarStyle img {
+    /* width: 20%; */
+  }
+
+  .card .title h1 {
+    font-size: 3vw;
+  }
+  .inputs input {
+    font-size: 16px;
+  }
+  .inputs p {
+    font-size: 1.3vw;
+  }
+  .checkbox {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .checkbox p {
+    font-size: 1.2vw;
+  }
+  .login {
+    margin-bottom: 5%;
+  }
+  .loginBtn {
+    font-size: 1.1vw;
+  }
+  .mainLeft p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1135px)  {
+  .inputs {
+    width: 100%;
+  }
+  .checkbox {
+    width: 100%;
+  }
+  .login {
+    width: 100%;
+  }
+  .mainLeft img {
+    width: 84%;
+  }
+  .mainLeft p {
+    font-size: 18px;
+  }
+  .faceG p {
+    font-size: 20px;
+  }
+  .inputs p {
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  .checkbox p {
+    font-size: 18px;
+  }
+  .card .title h1 {
+    font-size: 38px;
+  }
+  .loginBtn {
+    font-size: 1.7vw;
+  }
+  .loginCard {
+    width: 84%;
+  }
+  .inputs input {
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainLeft {
+    display: none;
+  }
+  .loginCard {
+    width: 60%;
+  }
+  .card .title h1 {
+    font-size: 40px;
+  }
+  .inputs input {
+    padding: 2.1%;
+  }
+  .checkbox {
+    flex-direction: initial;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  .login {
+    margin-bottom: 10px;
+  }
+  .loginBtn {
+    font-size: 22px;
+  }
+  .faceG p {
+    font-size: 20px;
+  }
+  .inputs p {
+    font-size: 20px;
+    padding-bottom: 2px;
+  }
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  .checkbox p {
+    font-size: 20px;
+  }
+  .card .title h1 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .checkbox {
+    align-items: initial;
+    width: 90%;
+  }
+  .navbarStyle img {
+    width: 80%;
+  }
+  .faceG p {
+    font-size: 20px;
+  }
+  .loginCard {
+    top: 57%;
+    width: 70%;
+  }
+  .inputs p {
+    font-size: 20px;
+    padding-bottom: 2px;
+  }
+  .inputs input {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  .checkbox p {
+    font-size: 20px;
+  }
+  .card .title h1 {
+    font-size: 38px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbarStyle {
+    padding-top: 5%;
+  }
+  .navbarStyle img {
+    text-align: center;
+  }
+  .faceG p {
+    font-size: 20px;
+  }
+  .loginCard {
+    top: 57%;
+    width: 85%;
+  }
+  .inputs p {
+    font-size: 20px;
+    padding-bottom: 2px;
+  }
+  .inputs input {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  .checkbox p {
+    font-size: 20px;
+  }
+  .card .title h1 {
+    font-size: 38px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .faceG p {
+    font-size: 18px;
+  }
+  .loginCard {
+    top: 57%;
+    width: 90%;
+  }
+  .inputs p {
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+  .inputs input {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  .checkbox p {
+    font-size: 17px;
+  }
+  .card .title h1 {
+    font-size: 35px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .checkbox {
+    text-align: left;
+    /* flex-direction: column; */
+  }
+  .checkbox p {
+    font-size: 16px;
+  }
+  
+  .loginBtn {
+    font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .faceG p {
+    font-size: 16px;
+  }
+  .orLogin {
+    margin-bottom: 10px;
+  }
+  .rememberBox {
+    width: 50%;
+  }
+  .loginCard {
+    top: 55%;
+    width: 95%;
+  }
+  .inputs p {
+    font-size: 17px;
+    padding-bottom: 2px;
+  }
+  .inputs input {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+  .checkbox p {
+    font-size: 17px;
+  }
+  .card .title h1 {
+    font-size: 35px;
+  }
+  .hero p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mainRight {
+    margin-top: 10vh;
+  }
+  .checkbox {
+    width: 98%;
+    margin: 10px auto;
+  }
+  .inputs p {
+    font-size: 15px;
+  }
+  .inputs input {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .loginBtn {
+    font-size: 18px;
+  }
+  .checkbox p {
+    font-size: 15px;
+  }
+  .card .title h1 {
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+  .faceG p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainRight {
+    margin-top: 20vh;
+  }
+  .inputs p {
+    font-size: 15px;
+  }
+  .inputs input {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .loginBtn {
+    font-size: 18px;
+  }
+  .checkbox p {
+    font-size: 15px;
+  }
+  .card .title h1 {
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+  .faceG p {
+    font-size: 15px;
+  }
+  .hr {
+  }
+}

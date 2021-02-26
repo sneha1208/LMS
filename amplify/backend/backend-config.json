@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "kidsgalaxynewf359ea52": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

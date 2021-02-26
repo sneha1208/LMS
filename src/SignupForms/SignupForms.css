@@ -1,0 +1,180 @@
+.backBtn {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+  margin-right: 10px;
+}
+.backBtn:hover {
+  background-color: rgb(87, 187, 113);
+  color: white;
+}
+
+.CreateAccount-password-confirm {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.CreateAccount-password-confirm p {
+  text-align: left;
+}
+
+.CreateAccount-password-confirm input {
+  width: 95%;
+}
+.CreateAccount_submitDiv {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.CreateAccount_submitBtn {
+  width: 100%;
+  background-color: rgb(87, 187, 113);
+  border: 2px solid rgb(87, 187, 113);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1.2vh;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s;
+}
+.CreateAccount_submitBtn:hover {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+}
+.CreatedAccount-half-inputs input {
+  padding: 13px;
+}
+
+/* //Personal Details 1 start */
+.personalDetails_1-inputs {
+  position: relative;
+}
+.personalDetails_1-loginBtnDiv {
+  display: flex;
+}
+.personalDetails_1-mobile_numbers_select {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  margin-left: 5%;
+  border: none;
+  font-size: 17px;
+}
+.personalDetails_1-inputs {
+  margin-bottom: 10%;
+}
+.personalDetails_1-mobile_numbers {
+  padding-left: 18% !important;
+}
+/* //Personal Details 1 end */
+
+.EducationalDetailsBoard {
+  display: flex;
+}
+.EducationalDetailsBoard_board {
+  padding: 10px 35px;
+  border-radius: 30px;
+  color: white;
+  border: 2px solid #262e42;
+  margin-right: 20px;
+  margin-top: 2%;
+  cursor: pointer;
+  color: black;
+}
+.EducationalDetailsBoard_board p {
+  margin: 0;
+}
+.EducationalDetails_class {
+  padding-top: 2%;
+}
+.EducationalDetails_class_select {
+  padding: 15px;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 30px;
+  outline: none;
+}
+.EducationalDetails_class_remeberBox {
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.EducationalDetails_class_remeberBox p {
+  font-size: 18px;
+}
+.EducationalDetails_class_select_stateDiv {
+  width: 49%;
+}
+.EducationalDetails_class_select_state {
+  padding: 15px;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 30px;
+  outline: none;
+}
+.EducationalDetails_colorBlack {
+  color: black;
+}
+.confirmation-code {
+  margin-bottom: 10%;
+}
+
+.terms-of-service {
+  background: none!important;
+  border: none;
+  padding-left: 5px;
+  text-decoration: none;
+  color:#3fa7d6;
+  cursor: pointer;
+}
+
+#accept-checkbox {
+  padding-left: 5px;
+}
+
+.terms-modal {
+    height: 89vh;  
+    color: #f9f9f9;  
+}
+
+.modal-body {
+  background-color: #262e42;
+  opacity: 85%;
+}
+.modal-header {
+  background-color: #262e42
+}
+.close {
+  color: white;
+}
+.close:hover {
+  color:white;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+  */
+::-webkit-scrollbar-thumb {
+  background: #f9f9f9; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+Modal.Title {
+  color: rgb(87, 187, 113);
+}
+
+Modal.Title h6 {
+  color:white;
+}
+
+
+
+

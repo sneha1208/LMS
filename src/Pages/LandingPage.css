@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* navbar start */
+.LandingPage {
+  height: 80vh;
+}
+/* .landingPage-main-content start*/
+.landingPage-main-content {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.landingPageLeft-content {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.landingPageLeft {
+  text-align: center;
+}
+.landingPageLeft-upper-h1 {
+  font-size: 65px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.landingPageLeft-lower-h1 {
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.landingPageLeft-content p {
+  font-size: 32px;
+}
+.landingPageLeft-content button {
+  padding: 15px 15px;
+  outline: none !important;
+  border: 1px solid rgb(87, 187, 113);
+  background-color: rgb(87, 187, 113);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+.landingPageLeft-content button:hover {
+  background-color: transparent;
+  color: rgb(87, 187, 113);
+}
+
+.landingPageRight-content {
+  text-align: center;
+}
+.landingPageRight-content img {
+  /* margin-top: 7%; */
+  width: 65%;
+  /* height: auto; */
+}
+/* .landingPage-main-content end*/
+@media screen and (max-width: 1500px) {
+  .landingPageRight-content img {
+    /* width: 50%; */
+  }
+}
+@media screen and (max-width: 1400px) {
+  .landingPageLeft-upper-h1 {
+    font-size: 45px;
+  }
+  .landingPageLeft-lower-h1 {
+    font-size: 35px;
+  }
+  .landingPageLeft-content p {
+    font-size: 20px;
+  }
+  .landingPageRight-content img {
+    /* width: 80%; */
+  }
+  .landingPageLeft-content button {
+    padding: 1.5% 3%;
+    font-size: 18px;
+  }
+
+  .landingPage-main-content {
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .landingPageLeft-upper-h1 {
+    font-size: 50px;
+  }
+  .landingPageLeft-lower-h1 {
+    font-size: 40px;
+  }
+  .landingPageLeft-content p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .landingPageRight {
+    display: none;
+  }
+  .landingPage-main-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
