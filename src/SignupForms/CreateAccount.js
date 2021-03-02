@@ -28,21 +28,43 @@ const CreateAccount = ({
     const emailErr = {};
     const passwordErr = {};
     let isValid = true;
+    const regex = /\S+@\S+\.\S+/;
 
     if (!email) {
       emailErr.fieldEmpty = "Enter an email";
-      setEmailErr(emailErr);
+      isValid = false;  
+    } else if (!regex.test(email)) {
+      emailErr.invalidEmail = "Email invalid";
       isValid = false;
+    } else {
+      isValid = true;
+    }
 
+    if (!password) {
+      passwordErr.fieldEmpty = 'Password is required';
+      isValid = false;
+    }else if (password.length < 6) {
+      passwordErr.lengthErr = 'Password needs to be 6 characters or more';
+      isValid = false;
+    }else {
+      isValid = true;
     }
     
-    if (!password || !confirmPassword) {
-      passwordErr.fieldEmpty = "Fields shouldn't be empty";
+    if (!confirmPassword) {
+      passwordErr.fieldEmpty = 'Password is required';
       isValid = false;
+    }else if (password !== confirmPassword) {
+      passwordErr.notMatchingPassword = 'Passwords do not match';
+      isValid = false;
+    }else {
+      isValid = true;
     }
 
     setEmailErr(emailErr);
     setPasswordErr(passwordErr);
+    
+    return isValid;
+
   };
 
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -63,7 +85,7 @@ const CreateAccount = ({
               value={email}
             />
             {Object.keys(emailErr).map((key) => {
-                return <p style={{color: 'red'}}>
+                return <p style={{color: 'red', fontSize:'14px'}}>
                   {emailErr[key]}
                 </p>
             })}
@@ -78,7 +100,7 @@ const CreateAccount = ({
                 value={password}
               />
               {Object.keys(passwordErr).map((key) => {
-                return <p style={{color: 'red'}}>
+                return <p style={{color: 'red', fontSize:'14px'}}>
                   {passwordErr[key]}
                 </p>
               })}
@@ -92,7 +114,7 @@ const CreateAccount = ({
                 value={confirmPassword}
                 />
                 {Object.keys(passwordErr).map((key) => {
-                  return <p style={{color: 'red'}}>
+                  return <p style={{color: 'red', fontSize:'14px'}}>
                     {passwordErr[key]}
                   </p>
                 })}

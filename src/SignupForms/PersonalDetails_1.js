@@ -14,9 +14,67 @@ const PersonalDetails_1 = ({
   phone,
   setPhone,
 }) => {
+  const [firstNameErr, setFirstNameErr] = useState({});
+  const [lastNameErr, setLastNameErr] = useState({});
+  const [phoneErr, setPhoneErr] = useState({});
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const isValid = formValidation();
+    if (isValid) {
+      nextStep();
+    }
+  };
+  
+  const formValidation = () => {
+    const firstNameErr = {};
+    const lastNameErr = {};
+    const phoneErr = {};
+    let isValid = true;
+    const regex = /^[A-Za-z]+/ ;
+    const regex_number = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+    
+    if (!firstName) {
+      firstNameErr.fieldEmpty = "First Name Required"
+      isValid = false;
+    }else if (!regex.test(firstName.trim())) {
+      firstNameErr.invalidInput = 'Enter a valid name';
+      isValid = false;
+    }else {
+      isValid = true;
+    }
+    
+    if (!lastName) {
+      lastNameErr.fieldEmpty = "Last Name Required"
+      isValid = false;
+    }else if (!regex.test(lastName.trim())) {
+      lastNameErr.invalidInput = 'Enter a valid name';
+      isValid = false;
+    }else {
+      isValid = true;
+    }
+
+    if (!phone) {
+      phoneErr.fieldEmpty = "Phone number required";
+      isValid = false;
+    } else if (!regex_number.test(phone.trim())) {
+      phoneErr.invalidInput = "Invalid phone number";
+      isValid = false;
+    }else {
+      isValid = true;
+    }
+
+    setFirstNameErr(firstNameErr);
+    setLastNameErr(lastNameErr);
+    setPhoneErr(phoneErr);
+
+    return isValid;
+
+  };
 
   return (
     <div className="card loginCard">
@@ -33,6 +91,11 @@ const PersonalDetails_1 = ({
                 onChange={(e) => setFirstName(e.target.value)}
                 value={firstName}
               />
+              {Object.keys(firstNameErr).map((key) => {
+                return <p style={{ color: 'red', fontSize:'14px'}}>
+                  {firstNameErr[key]}
+                </p>
+              })}
             </div>
             <div>
               <p>Last Name</p>
@@ -41,6 +104,11 @@ const PersonalDetails_1 = ({
                 onChange={(e) => setLastName(e.target.value)}
                 value={lastName}
               />
+              {Object.keys(lastNameErr).map((key) => {
+                return <p style={{color: 'red', fontSize:'14px' }}>
+                  {lastNameErr[key]}
+                </p>
+              })}
             </div>
           </div>
           <div className="input2 personalDetails_1-inputs">
@@ -62,13 +130,18 @@ const PersonalDetails_1 = ({
               <option>+94</option>
               <option>+94</option>
             </select>
+            {Object.keys(phoneErr).map((key) => {
+                return <p style={{color: 'red', fontSize:'14px', marginTop:'20px'}}>
+                  {phoneErr[key]}
+                </p>
+              })}
           </div>
         </div>
         <div className="login personalDetails_1-loginBtnDiv">
           <button className="loginBtn backBtn" onClick={previousStep}>
             Back
           </button>
-          <button className="loginBtn" onClick={nextStep}>
+          <button className="loginBtn" onClick={handleSubmit}>
             Submit
           </button>
         </div>
